@@ -1,22 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <script type="module" crossorigin src="/2023HexSchoolLive-Week5/assets/main-2d761428.js"></script>
-    <link rel="stylesheet" href="/2023HexSchoolLive-Week5/assets/main-4cfea7bd.css">
-  </head>
-  <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title">我是首頁</h1>
-    <img src="/2023HexSchoolLive-Week5/assets/cat-0c0689ae.jpg" style="width: 300px;" alt="cat">
 
-    <footer class="footer">我是 footer</footer>
-    
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap5 css cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- material design icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- ckeditor5 cdn -->
+  <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+  <title>Week5</title>
+  <script type="module" crossorigin src="/2023HexSchoolLive-Week5/assets/index-4eb7e0c5.js"></script>
+  <link rel="stylesheet" href="/2023HexSchoolLive-Week5/assets/index-97ae3ad5.css">
+</head>
+
+<body>
+  <!-- aside -->
+  <aside class="p-2 bg-light">
+    <div class="p-4">
+      <a href="index.html" class="mb-2 d-inline-block"><img src="/2023HexSchoolLive-Week5/assets/logo-ANSWER-5336fb45.svg" alt=""></a>
+      <ul class="nav flex-column mt-4">
+        <li class="nav-item mb-3">
+          <a class="nav-link fw-bold   d-flex align-items-center p-0" aria-current="page" href="#">
+            <span class="material-icons me-3">
+              assessment
+            </span>
+            Dashboard
+          </a>
+        </li>
+        <li class="nav-item mb-3">
+          <a class="nav-link   fw-bold d-flex align-items-center p-0" aria-current="page" href="#">
+            <span class="material-icons me-3">
+              question_answer
+            </span>
+            Question
+          </a>
+        </li>
+        <li class="nav-item mb-3">
+          <a class="nav-link fw-bold  d-flex align-items-center p-0 active" aria-current="page" href="#">
+            <span class="material-icons me-3">
+              assignment
+            </span>
+            Assignment
+          </a>
+        </li>
+        <li class="nav-item mb-3">
+          <a class="nav-link fw-bold d-flex align-items-center p-0" aria-current="page" href="#">
+            <span class="material-icons me-3">
+              video_library
+            </span>
+            Course
+          </a>
+        </li>
+        <li class="nav-item mb-3">
+          <a class="nav-link fw-bold  d-flex align-items-center p-0" aria-current="page" href="#">
+            <span class="material-icons me-3">
+              supervisor_account
+            </span>
+            Admin
+          </a>
+        </li>
+        <li class="nav-item mb-3">
+          <a class="nav-link fw-bold d-flex align-items-center p-0" aria-current="page" href="#">
+            <span class="material-icons me-3">
+              settings
+            </span>
+            Settings
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+
+  <!-- main -->
+  <main>
+
+    <div class="container">
+      <header class="py-3">
+        <div class="d-flex py-3  align-items-center px-2">
+          <h2 class="fs-4 l-lh-default m-0 me-5">Assignment</h2>
+          <!-- bs5 dropdown -->
+          <div class="dropdown">
+            <a class="btn d-flex align-items-center fw-bold" href="#" role="button" id="dropdownMenuLink"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              All Courses
+              <span class="material-icons ms-2 text-success fs-6 iconMore">
+                expand_more
+              </span>
+              <span class="material-icons ms-2 text-success fs-6 iconLess">
+                expand_less
+              </span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Course1</a></li>
+              <li><a class="dropdown-item" href="#">Course2</a></li>
+              <li><a class="dropdown-item" href="#">Course3</a></li>
+            </ul>
+          </div>
+          <div class="icon ms-auto d-flex align-items-center">
+            <a href="#" class="text-decoration-none me-4">
+              <span class="material-icons align-top">
+                search
+              </span>
+            </a>
+            <a href="#" class="text-decoration-none">
+              <span class="material-icons align-top">
+                notifications_active
+              </span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <section class="info">
+        <div class="dropdown">
+          <a class="btn d-flex align-items-center fw-bold" href="#" role="button" id="dropdownMenuLink"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            All
+            <span class="material-icons ms-2 text-success fs-6 iconMore">
+              expand_more
+            </span>
+            <span class="material-icons ms-2 text-success fs-6 iconLess">
+              expand_less
+            </span>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Course1</a></li>
+            <li><a class="dropdown-item" href="#">Course2</a></li>
+            <li><a class="dropdown-item" href="#">Course3</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-4 mb-5 mb-md-0">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action active" id="list-home-list .l-p-12" data-bs-toggle="list"
+                href="#list-home" role="tab" aria-controls="list-home">
+                <p class="l-fs-12 m-0 d-flex justify-content-between">Chapter Assignment 2<span class="ms-1">4 hrs ago</span></p>
+                <p class="fs-6 d-flex justify-content-between m-0 align-items-end">Please check this file…<span class="l-fs-12 ms-1">Emily Wang</span></p>
+              </a>
+              <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list"
+                href="#list-profile" role="tab" aria-controls="list-profile">
+                <p class="l-fs-12 m-0 d-flex justify-content-between">Chapter Assignment 1<span class="ms-1">12 hrs ago</span></p>
+                <p class="fs-6 d-flex justify-content-between m-0 align-items-end">My Homework<span class="l-fs-12 ms-1">David Xu</span></p>
+              </a>
+              <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list"
+                href="#list-messages" role="tab" aria-controls="list-messages">
+                <p class="l-fs-12 m-0 d-flex justify-content-between">Final Assignment<span class="ms-1">18 hrs ago</span></p>
+                <p class="fs-6 d-flex justify-content-between m-0 align-items-end">Have a problem with this…<span class="l-fs-12 ms-1">Tony Wei</span></p>
+              </a>
+              <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list"
+                href="#list-settings" role="tab" aria-controls="list-settings">
+                <p class="l-fs-12 m-0 d-flex justify-content-between">Final Assignment<span class="ms-1">19 hrs ago</span></p>
+                <p class="fs-6 d-flex justify-content-between m-0 align-items-end">Did I do it right?<span class="l-fs-12 ms-1">Christina Lin</span></p>
+              </a>
+            </div>
+          </div>
+
+
+
+          <div class="col-12 col-md-8">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                <div class="card">
+                  <div class="card-header l-p-12 px-3 d-flex justify-content-between align-items-center">
+                    <div class="text">
+                      <p class="l-fs-12 m-0">Chapter Assignment 2 / HTML&CSS</p>
+                      <p class="fw-bold m-0">Please check this file for me, thanks!</p>
+                    </div>
+                    <div class="icon" data-bs-toggle="tooltip" data-bs-placement="top" title="More">
+                      <a href="#">
+                        <span class="material-icons align-top">
+                          more_vert
+                        </span>
+                      </a>
+                    </div>
+
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <!-- ckeditor5 -->
+                    <div class="editor">This is some sample content.</div>
+                    <script>
+                      ClassicEditor
+                        .create(document.querySelector('.editor'))
+                        .then(editor => {
+                          console.log(editor);
+                        })
+                        .catch(error => {
+                          console.error(error);
+                        });
+                    </script>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+              <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+              <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </section>
+    </div>
+  </main>
+
+  
+  <!-- Bootstrap5 js cdn (bundle)-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap5 tooltip javascript -->
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+  </script>
+</body>
+
 </html>
