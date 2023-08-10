@@ -1,5 +1,11 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
+// 採用bootstrap5 
+// @import './base/reset';
+*{
+  outline: 1px solid red;
+}
+@import './utils/my-variables';
+@import './utils/layout';
 
 
-@import './pages/index.scss';
+
+@import './pages/index';

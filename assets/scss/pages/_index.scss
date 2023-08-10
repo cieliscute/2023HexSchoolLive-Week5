@@ -1,3 +1,53 @@
-.index-title {
-  font-size: 100px;
+aside{
+  width: 300px;
+  min-height: 100vh;
+  position: fixed;
+  left: 0px;
+  a.nav-link{
+    &.active{
+      color:$success;
+    }
+    transition: color .3s ease-in-out;
+    color:$dark;
+    &:hover{
+      color:$success;
+    }
+  }
+}
+
+main{
+  margin-left: 300px;
+}
+.icon{
+  a{
+    transition: color .3s ease-in-out;
+    color:$dark;
+    &:hover{
+      color:$success;
+    }
+  }
+}
+.ck-editor{
+  display: none;
+}
+
+
+.dropdown a{
+  .iconLess{
+    display: none;
+  }
+}
+.dropdown a.show{
+  .iconLess{
+    display: block;
+  }
+  .iconMore{
+    display: none;
+  }
+}
+.info{
+  .list-group-item.active{
+    background-color: $light;
+    color:$dark;
+  }
 }
