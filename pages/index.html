@@ -23,7 +23,7 @@
   <div class="wrap d-flex">
     <aside class="flex-shrink-0 l-p-32 bg-light d-flex flex-column justify-content-between ">
       <div>
-        <a href="index.html" class="mb-2 d-inline-block"><img src="../assets/images/logo-ANSWER.svg" alt=""></a>
+        <a href="index.html" class="mb-2 d-inline-block"><img src="../assets/images/logo-ANSWER.svg" alt="Answer Platform"></a>
         <ul class="nav flex-column mt-4">
           <li class="nav-item mb-3">
             <a class="nav-link fw-bold   d-flex align-items-center p-0" aria-current="page" href="#">
@@ -216,7 +216,7 @@
                               class="code">img</span> ? There is a gap below the image, but it doesn’t seems to be a
                             padding/margin. What is the gap or extra space below image?</p>
                           <!-- 下載 -->
-                          <a href="#" class="btn btn-light border fw-bold mb-3" download="HW-2-David.zip"> <span
+                          <a href="../assets/images/cat.jpg" class="btn btn-light border fw-bold mb-3" download="cutecat.jpg"> <span
                               class="material-icons me-2"> attach_file </span> HW-2-David.zip</a>
                         </div>
                       </div>
@@ -325,11 +325,8 @@
   </script>
   <script>
     let ckeditorShowBtn = document.querySelector('#ckeditorShowBtn');
-
-
-
-
-
+    // 防止a標籤亂跳
+    document.querySelectorAll("a[href='#']").forEach((item)=>{item.addEventListener("click",(e)=>{e.preventDefault();})})
   </script>
 </body>
 
