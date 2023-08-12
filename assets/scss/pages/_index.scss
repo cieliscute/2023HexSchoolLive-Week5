@@ -1,10 +1,12 @@
+.custom-container{
+  width: 984px;
+}
 aside{
   width: 300px;
   min-height: 100vh;
-  position: fixed;
-  left: 0px;
   a.nav-link{
     &.active{
+      position: relative;
       color:$success;
     }
     transition: color .3s ease-in-out;
@@ -13,10 +15,18 @@ aside{
       color:$success;
     }
   }
+  .nav-link.active::before{
+    content: "";
+    position: absolute;
+    height: 32px;
+    width: 4px;
+    background-color: $success;
+    left: -32px;
+  }
 }
 
-main{
-  margin-left: 300px;
+.material-icons{
+  vertical-align: top;
 }
 .icon{
   a{
@@ -27,11 +37,6 @@ main{
     }
   }
 }
-.ck-editor{
-  display: none;
-}
-
-
 .dropdown a{
   .iconLess{
     display: none;
@@ -50,4 +55,16 @@ main{
     background-color: $light;
     color:$dark;
   }
+}
+
+
+a[download]:hover{
+  color: $success;
+}
+.ck-editor{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  top: -500px;
 }

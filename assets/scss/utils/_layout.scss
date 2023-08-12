@@ -1,14 +1,35 @@
-.l-lh-default{
+.l-lh-normal{
   line-height: 1.5;
 }
 .l-lh-sm{
   line-height: 1.2;
 }
+.l-fs-12{
+  font-size: 12px;
+}
+
 
 
 .l-p-12{
   padding: 12px;
 }
-.l-fs-12{
-  font-size: 12px;
+.l-p-32{
+  padding: 32px;
+}
+.l-py-32{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.l-px-32{
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.l-mb-32{
+  margin-bottom: 32px;
+}
+
+.code{
+  font-family:'Roboto Mono',sans-serif ;
+  color: $success;
+  background-color: $light;
 }
